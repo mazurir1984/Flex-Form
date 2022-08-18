@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-form: grey;
+    --margin-bottom: 20px;
+    --input-height: 35px;
+}
+
+.body-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    align-self: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44);
+}
+
+.article-first {
+    text-align: center;
+    padding: 30px 25px;
+    background-color: #e6e3e3;
+}
+
+.title-form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-form);
+    margin-bottom: 15px;
+}
+
+.title-form::before,
+.title-form::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32%;
+    height: 2px;
+    background-color: rgb(160, 157, 157);
+    top: 15px;
+}
+
+.title-form::before {
+    left: 0;
+}
+
+.title-form::after {
+    right: 0;
+}
+
+.title-p {
+    font-size: 17px;
+    color: var(--color-form);
+    margin-bottom: var(--margin-bottom);
+}
+
+.name-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-name {
+    display: flex;
+    width: 47%;
+}
+
+.input-style {
+    border: 1px solid rgb(192, 186, 186);
+    border-radius: 4px;
+    height: var(--input-height);
+    margin-bottom: var(--margin-bottom);
+    padding-left: 10px;
+}
+
+.aceept {
+    display: flex;
+    margin-bottom: var(--margin-bottom);
+}
+
+.label-accept {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-form);
+}
+
+.accept-a {
+    display: inline-block;
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 189, 63);
+    border: none;
+    border-radius: 4px;
+    height: var(--input-height);
+    color: white;
+}
