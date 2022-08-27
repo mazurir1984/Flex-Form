@@ -8,35 +8,32 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body class="body body-article">
-    <article class="article-first body-article">
-        <section class="title-form-input">
+<body class="body-article">
+    <article class="article-first">
+        <!--<div class="title-form-input">-->
             <h1 class="title-form">Register</h1>
             <p class="title-p">Create your account. It's free and only takes a minute.</p>
-        </section>
-        <section>
-            <form class="title-form-input" action="#">
-                <section class="title-form-input">
-                    <section class="name-section">
-                        <input class="input-name input-style" type="text" name="firs name" placeholder="First Name">
-                        <input class="input-name input-style" type="text" name="last name" placeholder="Last Name">
-                    </section>
-                    <input class="login-details input-style" type="email" name="email" placeholder="Email">
-                    <input class="login-details input-style" type="password" name="password" placeholder="Password">
-                    <input class="login-details input-style" type="password" name="confirm password" placeholder="Confirm Password">
-                </section>
-                <section class="aceept">
-                    <label for="accept-checkbox" class="label-accept">
-                        <input class="input-checkbox" type="checkbox" id="accept-checkbox" name="accept">I accept the
-                        <a class="accept-a" href="#">Terms of Use</a>
-                        &
-                        <a class="accept-a" href="#">Privacy Policy</a>
-                    </label>
-                    
-                </section>
-                <button class="register-button">Register Now</button>
-            </form>
-        </section>
+        <!--</div>-->
+        <form class="title-form-input" action="#">
+            <div class="name-div">
+                <input class="input-name input-style" type="text" name="firstName" placeholder="First Name">
+                <input class="input-name input-style" type="text" name="lastName" placeholder="Last Name">
+            </div>
+            <input class="input-style" type="email" name="email" placeholder="Email">
+            <input class="input-style" type="password" name="password" placeholder="Password">
+            <input class="input-style" type="password" name="confirmPassword" placeholder="Confirm Password">
+            <!--<div class="aceept">-->
+                <label for="accept-checkbox" class="label-accept">
+                    <input class="input-checkbox" type="checkbox" id="accept-checkbox" name="accept">
+                    <span>I accept the
+                    <a class="accept-link" href="#">Terms of Use</a>
+                    &
+                    <a class="accept-link" href="#">Privacy Policy</a>
+                </span>
+                </label>
+            <!--</div>-->
+            <button class="register-button">Register Now</button>
+        </form>
     </article>
 </body>
 </html>
